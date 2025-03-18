@@ -8,16 +8,52 @@
     <script defer src="js/script.js"></script>
 </head>
 <body>
+      <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.jpg" alt="Belle Parlour Logo" style="height: 55px; margin-right: 10px;">
+                </a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#price-guide">Price Guide</a></li>
+                <li><a href="#booking-policy">Booking Policy</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Welcome to Belle Parlour</h1>
             <p>Relax, refresh, and rejuvenate with our premium spa treatments.</p>
-            <a href="#services" class="btn">View Services</a>
+            <button onclick="showGallery()" class="btn">View Our Services Gallery</button>
+        </div>
+    </section>
+<!-- Gallery Section (Hidden by Default) -->
+    <section id="gallery" class="gallery" >
+        <h2>Our Services Gallery</h2>
+        <div class="gallery-container">
+            <img src="images/work.jpg" alt="Service Image 1">
+            <img src="images/bg.jpg" alt="Service Image 2">
+            <img src="images/4.jpg" alt="Service Image 3">
+            <img src="images/img1.jpg" alt="Service Image 4">
+            <img src="images/hair.jpg" alt="Service Image 5">
+            <img src="images/img2.jpg" alt="Service Image 6">
+            <img src="images/img3.JPG" alt="Service Image 7">
+            <img src="images/nail.JPG" alt="Service Image 8">
         </div>
     </section>
 
     <!-- Services Section -->
+    
     <section id="services" class="section">
         <h2>Our Services</h2>
         <div class="service-container">
@@ -35,119 +71,136 @@
             </div>
         </div>
     </section>
-<!-- Price Guide Section -->
-    <section class="price-guide">
-        <h2>Price Guide</h2>
-        <div class="price-container">
-            <div class="price-category">
-                <h3>Hair Services</h3>
-                <div class="sub-category">
-                    <h4>Ponytail</h4>
-                    <ul>
-                        <li>Standard Ponytail - $40</li>
-                        <li>Low Ponytail - $45</li>
-                        <li>Sleek Ponytail - $50</li>
-                    </ul>
-                </div>
-                <div class="sub-category">
-                    <h4>Plain Knotless</h4>
-                    <ul>
-                        <li>Medium - $80</li>
-                        <li>Small - $100</li>
-                        <li>Large - $60</li>
-                    </ul>
-                </div>
-                <div class="sub-category">
-                    <h4>Curl Knotless</h4>
-                    <ul>
-                        <li>Medium - $90</li>
-                        <li>Small - $110</li>
-                        <li>Large - $70</li>
-                    </ul>
-                </div>
+ 
+   <!-- Price Guide Section -->
+<section id ="price-guide"class="price-guide">
+    <h2>Price Guide</h2>
+    <div class="price-container">
+        <!-- Hair Services -->
+        <div class="price-category">
+            <h3>Hair Services</h3>
+            <div class="sub-category">
+                <h4>Ponytail Styles</h4>
+                <ul>
+                    <li>Standard Ponytail - <strong>R150</strong></li>
+                    <li>Straight Ponytail - <strong>R150</strong></li>
+                    <li>Curly Ponytail - <strong>R150</strong></li>
+                </ul>
             </div>
-            
-            <div class="price-category">
-                <h3>Nail Services</h3>
-                <div class="sub-category">
-                    <h4>Acrylic</h4>
-                    <ul>
-                        <li>Short - $35</li>
-                        <li>Medium - $45</li>
-                        <li>Long - $55</li>
-                    </ul>
-                </div>
-                <div class="sub-category">
-                    <h4>Gel</h4>
-                    <ul>
-                        <li>Overlay - $30</li>
-                        <li>Full Set - $40</li>
-                        <li>French Tips - $50</li>
-                    </ul>
-                </div>
-                <div class="sub-category">
-                    <h4>Extras</h4>
-                    <ul>
-                        <li>Nail Art - $10</li>
-                        <li>Rhinestones - $15</li>
-                        <li>Repairs - $5 per nail</li>
-                    </ul>
-                </div>
+            <div class="sub-category">
+                <h4> Plain Knotless Braids</h4>
+                <ul>
+                    <li>Normal - <strong>R350</strong></li>
+                    <li>Medium - <strong>R400</strong></li>
+                    <li>Small - <strong>R450</strong></li>
+                    <li>Large - <strong>R450</strong></li>
+                </ul>
+            </div>
+            <div class="sub-category">
+                <h4>Curl Knotless</h4>
+                <ul>
+                    <li>Boho Braids- <strong>R400</strong></li>
+                    <li>Goddes braids French- <strong>R500</strong></li>
+                </ul>
             </div>
         </div>
-    </section>    
-<!-- Booking Policy Section -->
-    <section class="booking-policy">
-        <h2>Booking Policy</h2>
-        <div class="policy-grid">
-            <div class="policy-text">
-                <h3>Cancellation Policy</h3>
-                <p>Appointments must be canceled 24 hours in advance to avoid charges.</p>
+
+        <!-- Nail Services -->
+        <div class="price-category">
+            <h3>Nail Services</h3>
+            <div class="sub-category">
+                <h4>Acrylic Nails</h4>
+                <ul>
+                    <li>Plain Set- <strong>R280</strong></li>
+                    <li>French set- <strong>R350</strong></li>
+                    <li>Manicure- <strong>R250</strong></li>
+                   <li> Pedicure- <strong>R170</strong></li> 
+                </ul>
             </div>
-            <div class="policy-image">
-                <img src="https://source.unsplash.com/400x300/?calendar" alt="Cancellation Policy">
+            <div class="sub-category">
+                <h4>Gel Nails</h4>
+                <ul>
+                    <li>Overlay - <strong>R200</strong></li>
+                    <li>Gell with Tips- <strong>R250</strong></li>
+                    <li>Pedicure- <strong>R150</strong></li>
+                    <li>Buff & Shine - <strong>R100</strong></li>
+                </ul>
             </div>
-            <div class="policy-image">
-                <img src="https://source.unsplash.com/400x300/?spa,relaxation" alt="Booking Hours">
-            </div>
-            <div class="policy-text">
-                <h3>Booking Hours</h3>
-                <p>We accept bookings from 9 AM to 7 PM, Monday to Saturday.</p>
-            </div>
-            <div class="policy-text">
-                <h3>Late Arrivals</h3>
-                <p>Arriving late may result in a shortened appointment time.</p>
-            </div>
-            <div class="policy-image">
-                <img src="https://source.unsplash.com/400x300/?clock,time" alt="Late Arrivals">
-            </div>
-            <div class="policy-image">
-                <img src="https://source.unsplash.com/400x300/?payment,cash" alt="Payment Methods">
-            </div>
-            <div class="policy-text">
-                <h3>Payment Methods</h3>
-                <p>We accept cash, credit/debit cards, and mobile payments.</p>
+            <div class="sub-category">
+                <h4>Nail Extras</h4>
+                <ul>
+                    <li>Soak Off- <strong>R70</strong></li>
+                    <li>Nail Art(per nail) - <strong>R10</strong></li>
+                    <li>Buff Off- <strong>R40</strong></li>
+                    <li>Refill(acrylic)<strong>R170</strong></li>
+                </ul>
             </div>
         </div>
-    </section>
+
+        
+</section>
+   <!-- Booking Policy Section -->
+<section id ="booking-policy" class="booking-policy">
+    <h2>Booking Policy</h2>
+    <div class="policy-grid">
+        <!-- Cancellation Policy -->
+        <div class="policy-text">
+            <h3>Cancellation Policy</h3>
+            <p>Please cancel or reschedule at least <strong>24 hours</strong> before your appointment to avoid a cancellation fee.</p>
+        </div>
+        
+        <!-- Late Arrivals -->
+        <div class="policy-text">
+            <h3>Late Arrivals</h3>
+            <p>Arriving late may result in a shortened service to accommodate other clients.</p>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="policy-text">
+            <h3>Payment Methods</h3>
+            <p>We accept <strong>cash, credit/debit cards,</strong> and <strong>mobile payments</strong>.</p>
+        </div>
+
+        <!-- Booking Hours -->
+        <div class="policy-text">
+            <h3>Booking Hours</h3>
+            <p>Bookings are available from <strong>9 AM to 7 PM</strong>, Monday to Saturday.</p>
+        </div>
+    </div>
+</section>
 
     <!-- Booking Section -->
-    <section class="booking">
-        <h2>Book Your Appointment</h2>
-        <p>Click below to book your session via WhatsApp.</p>
-        <a href="https://wa.me/yourwhatsappnumber" class="btn btn-whatsapp">Book via WhatsApp</a>
-    </section>
+<section id="booking" class="booking">
+    <h2>Book Your Appointment</h2>
+    <p>Click below to book your session via WhatsApp.</p>
+    <a href="https://wa.me/27839282157" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+        Book via WhatsApp
+    </a>
+</section>
 
-    <!-- About Section -->
-    <section class="section about">
-        <h2>About Us</h2>
-        <p>At Serenity Spa, we offer high-quality spa treatments designed to relax your body and refresh your mind. Our experienced therapists are here to provide the best service in a tranquil environment.</p>
-    </section>
+    <!-- About Us Section -->
+    
+<section id="about"class="section about">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About Belle Parlour</h2>
+            <p>At <strong>Belle Parlour</strong>, we specialize in nails, hair, and beauty services. Our expert team is dedicated to providing a luxurious and relaxing experience tailored just for you.</p>
+            <p>Step into our sanctuary and let us pamper you with premium treatments that make you look and feel your best.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <footer class="footer">
-        <p>Contact Us: (+27) 83 928 2157 | thutotsotetsi.3@gmail.com</p>
-        <p>Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
-    </footer>
-</body>
+   
+<!-- Footer Section -->
+<footer class="footer">
+    <p>Contact Us: (+27) 83 928 2157 | thutotsotetsi.3@gmail.com</p>
+    <p>Follow us on 
+        <a href="https://www.facebook.com/profile.php?id=61557782713289" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i> Facebook
+        </a> | 
+        <a href="https://www.instagram.com/bell.eparlour?igsh=OXV6b24xc2YxMXMz" target="_blank" rel =" noopener noreferrer">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </p>
+</footer>
 </html>
