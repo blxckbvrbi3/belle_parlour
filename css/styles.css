@@ -19,7 +19,7 @@ nav {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: #ff69b4; /* Belle Parlour's theme color */
+    color: #bca1af; /* Belle Parlour's theme color */
     text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ nav {
     display: inline-block;
     width: 40px; /* Logo size */
     height: 40px;
-    background-image: url('images/logo.png'); /* Path to your logo */
+    background-image: url('images/logo-new.png'); /* Path to your logo */
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 10px;
@@ -48,14 +48,14 @@ nav {
 }
 
 .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #ff69b4; /* Pink color on hover */
+    color: whitesmoke; /* Pink color on hover */
 }
 
 /* Mobile Menu Toggle */
@@ -104,7 +104,7 @@ body {
 }
 
 .hero {
-    background: url('../images/bg.jpg') no-repeat center/cover;
+    background: url('../images/90f6b1c2-b66d-4728-b512-e7582d9f2925.MP4') no-repeat center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -121,6 +121,10 @@ body {
     border-radius: 10px;
 }
 /* Gallery Section Styles */
+#gallery {
+    display: none; /* Hidden initially */
+}
+
 .gallery {
     padding: 50px 20px;
     text-align: center;
@@ -137,13 +141,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between images */
+    gap: 5px; /* Space between images */
 }
 
 .gallery-container img {
     width: 100%;
     max-width: 300px; /* Adjust the image size */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 5px; /* Rounded corners */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.3s ease; /* Smooth hover effect */
 }
@@ -284,10 +288,10 @@ body {
 
 .price-category h3 {
     font-size: 1.5em;
-    color: #d4a373; /* Belle Parlour's theme color */
+    color: #bca1af; /* Belle Parlour's theme color */
     margin-bottom: 15px;
     text-align: center;
-    border-bottom: 2px solid #d4a373; /* Pink underline for emphasis */
+    border-bottom: 2px solid #bca1af; /* Pink underline for emphasis */
     padding-bottom: 10px;
 }
 
@@ -322,7 +326,7 @@ body {
 }
 
 .sub-category li strong {
-    color: #d4a373; 
+    color: #bca1af; 
     font-weight: 600; 
 }
 
